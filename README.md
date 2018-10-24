@@ -1,6 +1,6 @@
 Pseudospectral OPTimiser (POPT)
 
-This software was developed as part of my undergraduate thesis at The University of Queensland.
+This software was developed as part of my undergraduate thesis at The University of Queensland. POPT is distributed under the MIT License. 
 
 This software is able to solve continous time, multiple-phase trajectory optimisation problems 
 using Legendre-Gauss-Radau orthogonal collocation methods.
