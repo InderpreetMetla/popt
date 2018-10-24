@@ -9,7 +9,6 @@ POPT uses IPOPT as its NLP solver. Pre-compiled mex files for MATLAB are require
 
 https://www.coin-or.org/download/binary/Ipopt/
 
-IPOPT version 3.11.8 is recommended. The IPOPT mex files are to be placed inside the popt/nlp/ipopt folder. 
+IPOPT version 3.11.8 is recommended. The IPOPT mex files are to be placed inside the popt/nlp/ipopt directory. 
 
 A user's guide for the software is available in the popt/docs directory.
- 
