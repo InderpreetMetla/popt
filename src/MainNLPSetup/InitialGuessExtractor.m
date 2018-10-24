@@ -120,10 +120,9 @@ switch Case
     
     case{'state'}
         Yinterp = interp1(x,y,Xinterp,'pchip');
-%         Yinterp = barylag([x,y],Xinterp);
         
     case{'control'}
         Yinterp = interp1(x,y,Xinterp(1:end-1),'pchip');
-%         Yinterp = barylag([x,y],Xinterp(1:end-1));
+        
 end
 end
