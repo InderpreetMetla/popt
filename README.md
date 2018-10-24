@@ -9,6 +9,8 @@ POPT uses IPOPT as its NLP solver. Pre-compiled mex files for MATLAB are require
 
 https://www.coin-or.org/download/binary/Ipopt/
 
-IPOPT version 3.11.8 is recommended. The IPOPT mex files are to be placed inside the popt/nlp/ipopt directory. 
+IPOPT version 3.11.8 is recommended. The IPOPT mex files are to be placed inside the popt/nlp/ipopt directory.
+
+POPT is able to use automatic differentiation to carry out derivative calculations. The open-source program MatlabAutoDiff has been interfaced with the solver and is able from: https://github.com/martinResearch/MatlabAutoDiff. Add this to the root directory /popt if you wish to use automatic differentiation. A finite-difference technique and a complex-step differentiation technique are in-built in POPT and require no other third-party programs. 
 
 A user's guide for the software is available in the popt/docs directory.
