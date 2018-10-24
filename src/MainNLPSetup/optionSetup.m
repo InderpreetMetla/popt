@@ -135,8 +135,8 @@ if isfield(problem,'derivatives')
                 isequal(problem.derivatives.method,'fd') || ...
                 isequal(problem.derivatives.method,'FD') || ...
                 isequal(problem.derivatives.method,'forward-difference')
-            problem.derivatives.first.stepsize.gradient = 2.9802e-06;
-            problem.derivatives.first.stepsize.jacobian = 2.9802e-08;
+            problem.derivatives.first.stepsize.gradient = 3e-06;
+            problem.derivatives.first.stepsize.jacobian = 3e-08;
         elseif isequal(problem.derivatives.method,'cs') || ...
                 isequal(problem.derivatives.method,'CS')
             problem.derivatives.first.stepsize.gradient = 1e-20;
@@ -149,10 +149,10 @@ if isfield(problem,'derivatives')
                     isequal(problem.derivatives.method,'FD') || ...
                     isequal(problem.derivatives.method,'forward-difference')
                 if ~isfield(problem.derivatives.first.stepsize,'gradient')
-                    problem.derivatives.first.stepsize.gradient = 2.9802e-06;
+                    problem.derivatives.first.stepsize.gradient = 3e-06;
                 end
                 if ~isfield(problem.derivatives.first.stepsize,'jacobian')
-                    problem.derivatives.first.stepsize.jacobian = 2.9802e-08;
+                    problem.derivatives.first.stepsize.jacobian = 3e-08;
                 end
             elseif isequal(problem.derivatives.method,'cs') || ...
                     isequal(problem.derivatives.method,'CS')
@@ -168,8 +168,8 @@ if isfield(problem,'derivatives')
                     isequal(problem.derivatives.method,'fd') || ...
                     isequal(problem.derivatives.method,'FD') || ...
                     isequal(problem.derivatives.method,'forward-difference')
-                problem.derivatives.first.stepsize.gradient = 2.9802e-06;
-                problem.derivatives.first.stepsize.jacobian = 2.9802e-08;
+                problem.derivatives.first.stepsize.gradient = 3-06;
+                problem.derivatives.first.stepsize.jacobian = 3e-08;
             elseif isequal(problem.derivatives.method,'cs') || ...
                     isequal(problem.derivatives.method,'CS')
                 problem.derivatives.first.stepsize.gradient = 1e-20;
@@ -180,13 +180,13 @@ if isfield(problem,'derivatives')
     if problem.derivatives.order == 2 && ...
             (~isfield(problem.derivatives,'second') || ...
             ~isfield(problem.derivatives.second,'stepsize'))
-        problem.derivatives.second.stepsize = 1.7467e-05;
+        problem.derivatives.second.stepsize = 1.75e-05;
     end
 else
     problem.derivatives.method = 'fd';
     problem.derivatives.order = 1;
-    problem.derivatives.first.stepsize.gradient = 2.9802e-06;
-    problem.derivatives.first.stepsize.jacobian = 2.9802e-08;
+    problem.derivatives.first.stepsize.gradient = 3e-06;
+    problem.derivatives.first.stepsize.jacobian = 3e-08;
     options.ipopt.hessian_approximation = 'limited-memory';
 end
 
