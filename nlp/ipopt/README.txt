@@ -1,6 +1,6 @@
-The mex files for IPOPT are required to be placed within this folder.
+The mex files for IPOPT are required to be placed within this folder. Create a folder within this directory called /ipopt that contains all of the mex files. 
 
-It is highly recommended that the user obtain pre-compiled IPOPT mex files to interface with MATLAB.These are available from: 
+It is highly recommended that the user obtain pre-compiled IPOPT mex files to interface with MATLAB. These are available from: 
 
 https://www.coin-or.org/download/binary/Ipopt/
 
