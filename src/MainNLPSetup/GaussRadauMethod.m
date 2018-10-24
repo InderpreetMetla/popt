@@ -83,8 +83,6 @@ Gauss.DM  = sparse(DI.DiffMatrix);
 Gauss.IM  = sparse(DI.IntMatrix);
 Gauss.DM1 = spones(DI.DiffMatrix);
 Gauss.MM  = sparse(DI.X0Multiplier);
-% Gauss.DM_Diag           = zeros(size(Gauss.DM));
-% Gauss.DM_Diag(:,2:end)  = diag(diag(Gauss.DM,1));
 end
 
 
